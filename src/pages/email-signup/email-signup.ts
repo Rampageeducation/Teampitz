@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {QuizPage} from "../quiz/quiz";
+import {EmailSignupSuccessPage} from "../email-signup-success/email-signup-success";
 
 /**
- * Generated class for the GameRulesPage page.
+ * Generated class for the EmailSignupPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,18 +11,18 @@ import {QuizPage} from "../quiz/quiz";
 
 @IonicPage()
 @Component({
-  selector: 'page-game-rules',
-  templateUrl: 'game-rules.html',
+  selector: 'page-email-signup',
+  templateUrl: 'email-signup.html',
 })
-export class GameRulesPage {
+export class EmailSignupPage {
 
-  quizPage = QuizPage;
+  emailSignupSuccessPage = EmailSignupSuccessPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad GameRulesPage');
+    console.log('ionViewDidLoad EmailSignupPage');
   }
 
 }
