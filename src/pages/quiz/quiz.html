@@ -1,4 +1,24 @@
 <ion-content padding>
   <p>Quiz</p>
   <p [navPush]="resultsPage">Results</p>
+
+  <p id="test1" onclick="question1()">question1</p>
+  <p id="test2" onclick="question2()">question2</p>
+  <p id="test3" onclick="question3()">question3</p>
+  <p id="test4" onclick="question4()">question4</p>
+
+
+
+  <img src="assets/imgs/Answer.png" onclick="question1()" id="image1" style=" width: 300px; height: 300px">
+  <img src="assets/imgs/Answer.png" onclick="question2()" id="image2" style=" width: 300px; height: 300px">
+  <img src="assets/imgs/Answer.png" onclick="question3()" id="image3" style=" width: 300px; height: 300px">
+  <img src="assets/imgs/Answer.png" onclick="question4()" id="image4" style=" width: 300px; height: 300px">
+
+
+  <div style="width: 200px">
+  <img src="assets/imgs/CommitButton.png" onclick="changeFunction()" id="confirmButton" style=" width: 200px;">
+
+  <img src="assets/imgs/CommitButton.png" onload="hideWinscreenArrow()" id="winScreen" style=" width: 200px;" [navPush]="resultsPage">
+  </div>
+
 </ion-content>
