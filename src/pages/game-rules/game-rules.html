@@ -2,8 +2,26 @@
     background-image: url('../../assets/imgs/game-rules.jpg');
     background-size: cover;
     background-position: center center;
+    background-color: #64605d;
     ">
 
-  <p>Game Rules</p>
-  <p [navPush]="quizPage">Begynd Quiz</p>
+  <h1 id="spilletsRegler">Spillets Regler</h1>
+
+  <div id="startQuizBox">
+    <!--<p>Game Rules</p>-->
+    <div id="startQuizTextContainer">
+      <p>Quizzen går ud på at der ved hvert spørgsmål er 4
+        svarmuligheder, hvortil der er 1 rigtigt svar.
+      </p>
+      <p>
+        Der er i alt 10 spørgsmål, hvor du skal bruge både din logik,
+        høresans og røresans.
+      </p>
+      <p>
+        Vælg en svarmulighed, og tryk på pilen nederst i højre
+        hjørne for at gå videre til det næste spørgsmål.
+      </p>
+    </div>
+  </div>
+  <img src="../../assets/imgs/CommitButton.png" id="commitButton" [navPush]="quizPage">
 </ion-content>

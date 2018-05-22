@@ -1,3 +1,90 @@
 page-results {
 
 }
+
+@font-face {
+  font-family: ProximaNovaAltRegular;
+  src: url("../../assets/fonts/Mark Simonson - Proxima Nova Alt Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: ProximaNovaAltBold;
+  src: url("../../assets/fonts/Mark Simonson - Proxima Nova Alt Bold.ttf") format("truetype");
+}
+
+#thanksMessage{
+  font-size: 8em;
+  color: #f8d747;
+  //padding: 7% 0 0 12%;
+  text-align: center;
+}
+
+#thanksMessageBox{
+  //display: flex;
+  margin: 0;
+  width: 1000px;
+  //padding: 7% 0 0 20%;
+  margin: 5% 7% 0 13%;
+  font-family: ProximaNovaAltRegular;
+}
+
+#resultsBox{
+  width: 70%;
+  height: 45%;
+  font-family: ProximaNovaAltRegular;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: solid;
+  margin: 7% 0 0 15%;
+  color: #ffffff;
+}
+
+#resultsBox p {
+  margin: 0;
+  color: #000000;
+}
+
+#results{
+  font-family: ProximaNovaAltRegular;
+  font-size: 4.5em;
+  text-align: center;
+  padding: 3% 0 3% 0;
+}
+
+#textBox1{
+  width:  50%;
+  margin: 0 auto 5% auto;
+}
+
+#textBox2, #textBox1{
+  font-family: ProximaNovaAltRegular;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+#email{
+  display: flex;
+  color: black;
+  margin:0 0 0 25%;
+}
+/*
+#text1, #text2, #text4{
+  font-family: ProximaNovaAltRegular;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+#text3{
+  font-family: ProximaNovaAltBold;
+  font-size: 3em;
+  text-align: center;
+}
+
+#text1Box{
+  width: 40%;
+  margin: 0 auto 5% auto;
+}
+
+#text2-3Box{
+  display: flex;
+  width: 70%;
+}
+*/

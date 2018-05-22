@@ -2,13 +2,17 @@
     background-image: url('../../assets/imgs/home.jpg');
     background-size: 2100px;
     background-position: center center;
+    background-color: #64605d;
     ">
   <div id="tirpitz-logo">
     <img src="../../assets/imgs/tirpitz_yellow.gif">
   </div>
 
-  <div id="startGameBox">
+  <div id="startGameBox" [navPush]="gameRulesPage">
     <!--<p>Start Quiz</p>-->
-    <p [navPush]="gameRulesPage">Start Quiz</p>
+    <div id="startQuizContainer">
+      <p>Start Quiz</p>
+      <img src="../../assets/imgs/black-arrow-hi.png" id="blackArrow">
+    </div>
   </div>
 </ion-content>

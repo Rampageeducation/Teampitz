@@ -1,6 +1,10 @@
 page-home {
 }
 
+@font-face {
+  font-family: ProximaNovaAltRegular;
+  src: url("../../assets/fonts/Mark Simonson - Proxima Nova Alt Regular.ttf") format("truetype");
+}
 
 ion-content{
 }
@@ -12,15 +16,26 @@ ion-content{
 #startGameBox{
   width: 70%;
   height: 40%;
+  font-family: ProximaNovaAltRegular;
   background-color: rgba(255, 255, 255, 0.5);
-  border-color: #ffffff;
   border: solid;
   margin: 0% 15%;
+  color: #ffffff;
 }
 
 #startGameBox p{
   font-size: 6em;
-  padding: 0 0 0 30%;
+  margin: 0;
+  color: #000000;
+}
+
+#blackArrow{
+  width: 200px;
+  margin: 0 0 0 15%;
+}
+
+#startQuizContainer{
+  padding: 7% 0 0 30%;
 }
 
 /*

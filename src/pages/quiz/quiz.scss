@@ -1,3 +1,88 @@
 page-quiz {
 
 }
+
+@font-face {
+  font-family: ProximaNovaAltRegular;
+  src: url("../../assets/fonts/Mark Simonson - Proxima Nova Alt Regular.ttf") format("truetype");
+}
+
+#confirmButton{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+#winScreen{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+#questionsContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1120px;
+  margin:100px auto;
+}
+
+#questionBox{
+  padding: 7% 0 0 29%;
+  font-family: ProximaNovaAltRegular;
+}
+
+#questionOf{
+  font-size: 6em;
+  color: #f8d747;
+  margin: 0;
+}
+
+#actualQuestion{
+  font-size: 4em;
+  color: #000000;
+  padding: 2% 0 0 9%;
+  margin: 0;
+}
+
+#test1, #test2, #test3, #test4{
+  position: absolute;
+  font-family: ProximaNovaAltRegular;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: black;
+  font-size: 2.5em;
+}
+
+#question1, #question2, #question3, #question4{
+  position: relative;
+  text-align: center;
+  width: 500px;
+  height: 185px;
+  border: solid;
+  color: #ffffff;
+}
+
+#question1{
+  margin: 0 120px 60px 0;
+}
+
+#question2{
+  margin: 0 0 60px 0;
+}
+
+#question3{
+  margin: 0 120px 0 0;
+}
+
+.scroll-content{
+  padding: 0!important;
+}
+
+#image1, #image2, #image3, #image4{
+  width: 1000px;
+  height: 180px;
+  opacity: 0.5;
+}

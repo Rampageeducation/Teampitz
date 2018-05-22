@@ -2,13 +2,30 @@
     background-image: url('../../assets/imgs/results.jpg');
     background-size: 2000px;
     background-position: center center;
+    background-color: #64605d;
     ">
-  <p>Results</p>
-  <p [navPush]="emailSignupPage">Sign up for a Coupon</p>
+  <!--<p>Results</p>-->
+  <div id="thanksMessageBox">
+    <h1 id="thanksMessage">Tak fordi du spillede med!</h1>
+  </div>
 
-  <p onclick="reloadQuiz()">Go Back To Start Of Quiz</p>
+  <!--<p [navPush]="emailSignupPage">Sign up for a Coupon</p>-->
 
-  <img src="assets/imgs/Answer.png" onload="winMessage()"> <!--Smid den er onLoad på et image på den her side-->
-  <p id="redMango" onload="winMessage()">Teehee</p>
+  <div id="resultsBox">
+    <p id="results">Results Here</p>
+
+    <div id="textBox1">
+      <p>Vi håber du lærte noget spændende om Tirpitz.</p>
+    </div>
+    <div id="textBox2">
+      <p>Du kan skrive din email for at modtage en rabatkupon til dit besøg på museet og nyhedsbreve.</p>
+      <div id="email">
+        <p>Email:</p>
+        <input type="text" name="firstname" value="">
+      </div>
+    </div>
+
+  </div>
+  <img src="assets/imgs/CommitButton.png" onload="winMessage()" onclick="changeFunction()" id="confirmButton" [navPush]="emailSignupPage">
 
 </ion-content>

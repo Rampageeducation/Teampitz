@@ -26,7 +26,8 @@ let answer1 =[
     {answer: true, question: "question1"},
     {answer: false, question: "question2"},
     {answer: false, question: "question3"},
-    {answer: false, question: "question4"}
+    {answer: false, question: "question4"},
+    {actualQuestion: "Hvad er 1 + 1?"}
 ];
 
 function hideWinscreenArrow() {
@@ -63,9 +64,9 @@ function windowCheck() {
 }
 
 function winMessage() {
-  console.log("WIll it print?");
+  console.log("Will it print?");
   //document.getElementById("redMango").innerHTML = "Mango!";
-    document.getElementById("redMango").innerHTML = "Congratulation you got " + sessionStorage.getItem("SessionName") + " questions right!"
+    document.getElementById("results").innerHTML = "Du havde " + sessionStorage.getItem("SessionName")+ "/" + numbersOfQuestions + " rigtige!"
 }
 
 function setQuestions() {
@@ -73,6 +74,8 @@ function setQuestions() {
     document.getElementById("test2").innerHTML = answer1[1].question;
     document.getElementById("test3").innerHTML = answer1[2].question;
     document.getElementById("test4").innerHTML = answer1[3].question;
+    document.getElementById("actualQuestion").innerHTML = answer1[4].actualQuestion;
+    document.getElementById("questionOf").innerHTML = 'Spørgsmål ' + question + '/' + numbersOfQuestions +':'
 }
 
 function question1() {
@@ -154,40 +157,49 @@ function answerIs1() {
     {answer: true, question: "question1"},
     {answer: false, question: "question2"},
     {answer: false, question: "question3"},
-    {answer: false, question: "question4"}
+    {answer: false, question: "question4"},
+    {actualQuestion: "Hvad er 1 + 1?"}
   ];
 }
 
 function answerIs2() {
     answer1 =[
-        {answer: false, question: "question5"},
-        {answer: true, question: "question6"},
-        {answer: false, question: "question7"},
-        {answer: false, question: "question8"}];
+      {answer: false, question: "question5"},
+      {answer: true, question: "question6"},
+      {answer: false, question: "question7"},
+      {answer: false, question: "question8"},
+      {actualQuestion: "Hvad er 2 + 2?"}
+    ];
 }
 
 function answerIs3() {
     answer1 =[
-        {answer: false, question: "question9"},
-        {answer: false, question: "question10"},
-        {answer: true, question: "question11"},
-        {answer: false, question: "question12"}];
+      {answer: false, question: "question9"},
+      {answer: false, question: "question10"},
+      {answer: true, question: "question11"},
+      {answer: false, question: "question12"},
+      {actualQuestion: "Hvad er 3 + 3?"}
+    ];
 }
 
 function answerIs4() {
     answer1 =[
-        {answer: false, question: "question13"},
-        {answer: false, question: "question14"},
-        {answer: false, question: "question15"},
-        {answer: true, question: "question16"}];
+      {answer: false, question: "question13"},
+      {answer: false, question: "question14"},
+      {answer: false, question: "question15"},
+      {answer: true, question: "question16"},
+      {actualQuestion: "Hvad er 4 + 4?"}
+    ];
 }
 
 function answerIs5() {
     answer1 =[
-        {answer: false, question: "question17"},
-        {answer: true, question: "question18"},
-        {answer: false, question: "question19"},
-        {answer: false, question: "question20"}];
+      {answer: false, question: "question17"},
+      {answer: true, question: "question18"},
+      {answer: false, question: "question19"},
+      {answer: false, question: "question20"},
+      {actualQuestion: "Hvad er 5 + 5?"}
+    ];
 }
 
 function changeImages() {

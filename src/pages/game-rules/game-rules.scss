@@ -2,6 +2,45 @@ page-game-rules {
 
 }
 
+@font-face {
+  font-family: ProximaNovaAltRegular;
+  src: url("../../assets/fonts/Mark Simonson - Proxima Nova Alt Regular.ttf") format("truetype");
+}
+
+#spilletsRegler{
+  font-family: ProximaNovaAltRegular;
+  font-size: 11em;
+  color: #f8d747;
+  padding: 7% 0 0 13.5%;
+}
+
+#startQuizBox{
+  width: 70%;
+  height: 40%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: solid;
+  margin: 7% 0 0 15%;
+  color: #ffffff;
+}
+
+#startQuizTextContainer{
+  padding: 7% 2% 0 2%;
+}
+
+#startQuizTextContainer p{
+  font-family: ProximaNovaAltRegular;
+  font-size: 2.5em;
+  margin: 0;
+  text-align: center;
+  color: #000000;
+}
+
+#commitButton{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
 /*
 ion-content{
   background-size: cover;
