@@ -28,7 +28,8 @@ page-quiz {
 }
 
 #questionBox{
-  padding: 7% 0 0 29%;
+  padding: 7% 0 0 0;
+  text-align: center;
   font-family: ProximaNovaAltRegular;
 }
 
@@ -41,7 +42,6 @@ page-quiz {
 #actualQuestion{
   font-size: 4em;
   color: #000000;
-  padding: 2% 0 0 9%;
   margin: 0;
 }
 
@@ -85,4 +85,37 @@ page-quiz {
   width: 1000px;
   height: 180px;
   opacity: 0.5;
+}
+
+@media screen and (max-width: 1366px){
+  #image1, #image2, #image3, #image4{
+    width: 300px;
+    height: 120px;
+  }
+
+  #question1{
+    margin: 0 80px 40px 0;
+  }
+
+  #question2{
+    margin: 0 0 40px 0;
+  }
+
+  #question3{
+    margin: 0 80px 0 0;
+  }
+
+  #question1, #question2, #question3, #question4{
+    width: 300px;
+    height: 125px;
+  }
+
+  #questionsContainer{
+    width: 1020px;
+    margin:5% 0 0 16%;
+  }
+
+  #test1, #test2, #test3, #test4{
+    font-size: 2em;
+  }
 }

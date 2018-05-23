@@ -11,7 +11,8 @@ page-game-rules {
   font-family: ProximaNovaAltRegular;
   font-size: 11em;
   color: #f8d747;
-  padding: 7% 0 0 13.5%;
+  padding: 7% 0 0 0;
+  text-align: center;
 }
 
 #startQuizBox{
@@ -41,11 +42,12 @@ page-game-rules {
   right: 0px;
 }
 
-/*
-ion-content{
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
+@media screen and (max-width: 1366px){
+  #spilletsRegler{
+    font-size: 7em;
+  }
 
-*/
+  #startQuizTextContainer p{
+    font-size: 2em;
+  }
+}

@@ -89,6 +89,7 @@ function question1() {
         changeWrongImages();
         answered = true;
     }
+    showWinArrow();
 }
 
 function question2() {
@@ -102,6 +103,7 @@ function question2() {
         changeWrongImages();
         answered = true;
     }
+    showWinArrow();
 }
 
 function question3() {
@@ -115,6 +117,7 @@ function question3() {
         changeWrongImages();
         answered = true;
     }
+    showWinArrow();
 }
 
 function question4() {
@@ -128,6 +131,7 @@ function question4() {
         changeWrongImages();
         answered = true;
     }
+    showWinArrow();
 }
 
 function checkQuestion(){
@@ -152,6 +156,14 @@ function checkQuestion(){
         question++;
     }
 }
+
+function showWinArrow(){
+  if(question === numbersOfQuestions){
+    document.getElementById("confirmButton").style.display = "none"
+    document.getElementById("winScreen").style.display = "block"
+  }
+}
+
 function answerIs1() {
   answer1 =[
     {answer: true, question: "question1"},
@@ -263,11 +275,6 @@ function changeWrongImages() {
 }
 
 function changeFunction() {
-  if(question === numbersOfQuestions - 1){
-    document.getElementById("confirmButton").style.display = "none"
-    document.getElementById("winScreen").style.display = "block"
-  }
-
     if(question === numbersOfQuestions){
         thisSessionStorage();
         //document.location.href = 'winScreen.html'
