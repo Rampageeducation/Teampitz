@@ -5,11 +5,13 @@ page-email-signup {
 @font-face {
   font-family: ProximaNovaAltSemibold;
   src: url("../../assets/fonts/Mark Simonson - Proxima Nova Alt Semibold.ttf") format("truetype");
+  src: url("../assets/fonts/Mark Simonson - Proxima Nova Alt Semibold.ttf") format("truetype");
 }
 
 #signupBox{
   width: 70%;
-  height: 40%;
+  //height: 40%;
+  height: fit-content;
   font-family: ProximaNovaAltSemibold;
   background-color: rgba(255, 255, 255, 0.5);
   border: solid;
@@ -29,7 +31,7 @@ page-email-signup {
 #signUpTextBox{
   color: #000000;
   text-align: center;
-  margin: 12% 0 0 0;
+  margin: 12% 0 12% 0;
 }
 
 @media screen and (max-width: 1366px){
@@ -47,11 +49,12 @@ page-email-signup {
   }
 
   #signUpTextBox{
-    margin: 20% 0 0 0;
+    //margin: 20% 0 0 0;
+    margin: 13% 0 0 0;
   }
 
   #signupBox{
-    height: 30%;
-    margin: 60% auto 0 auto;
+    //height: 30%;
+    margin: 50% auto 0 auto;
   }
 }
