@@ -5,16 +5,19 @@ page-quiz {
 @font-face {
   font-family: ProximaNovaAltRegular;
   src: url("../../assets/fonts/Mark Simonson - Proxima Nova Alt Regular.ttf") format("truetype");
+  src: url("../assets/fonts/Mark Simonson - Proxima Nova Alt Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: ProximaNovaAltSemibold;
   src: url("../../assets/fonts/Mark Simonson - Proxima Nova Alt Semibold.ttf") format("truetype");
+  src: url("../assets/fonts/Mark Simonson - Proxima Nova Alt Semibold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: ProximaNovaAltBold;
   src: url("../../assets/fonts/Mark Simonson - Proxima Nova Alt Bold.ttf") format("truetype");
+  src: url("../assets/fonts/Mark Simonson - Proxima Nova Alt Bold.ttf") format("truetype");
 }
 
 #confirmButtonQuiz{
@@ -59,7 +62,7 @@ page-quiz {
 
 #actualQuestion{
   font-size: 4em;
-  color: #000000;
+  color: #ffffff;
   margin: 0;
   font-family: ProximaNovaAltSemibold;
 }
@@ -150,7 +153,7 @@ page-quiz {
 }
 @media screen and (max-width: 415px){
   #questionBox{
-    padding: 25% 0 0 0;
+    padding: 15% 0 0 0;
   }
 
   #questionOf{

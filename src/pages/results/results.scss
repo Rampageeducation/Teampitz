@@ -5,11 +5,13 @@ page-results {
 @font-face {
   font-family: ProximaNovaAltBold;
   src: url("../../assets/fonts/Mark Simonson - Proxima Nova Alt Bold.ttf") format("truetype");
+  src: url("../assets/fonts/Mark Simonson - Proxima Nova Alt Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: ProximaNovaAltSemibold;
   src: url("../../assets/fonts/Mark Simonson - Proxima Nova Alt Semibold.ttf") format("truetype");
+  src: url("../assets/fonts/Mark Simonson - Proxima Nova Alt Semibold.ttf") format("truetype");
 }
 
 #thanksMessage{
@@ -30,7 +32,7 @@ page-results {
 
 #resultsBox{
   width: 70%;
-  height: 45%;
+  height: fit-content;
   font-family: ProximaNovaAltSemibold;
   background-color: rgba(255, 255, 255, 0.5);
   border: solid;
@@ -57,6 +59,10 @@ page-results {
 #textBox2, #textBox1{
   text-align: center;
   font-size: 2.5em;
+}
+
+#textBox2{
+  margin: 0 0 5% 0;
 }
 
 #email{
@@ -105,8 +111,8 @@ page-results {
   }
 
   #thanksMessageBox{
-    width: 400px;
-    margin: 25% 0 0 0;
+    width: 414px;
+    margin: 15% 0 0 0;
   }
 
   #results{
@@ -129,7 +135,18 @@ page-results {
     width: 75%;
   }
 
+  #resultsBox{
+    //height: 40%;
+    //height: 50%;
+  }
+
   #confirmButton{
     width: 100px;
+  }
+}
+
+@media screen and (max-width: 376px){
+  #thanksMessageBox{
+    width: 375px;
   }
 }
