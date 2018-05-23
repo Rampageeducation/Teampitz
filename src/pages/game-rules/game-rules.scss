@@ -3,12 +3,17 @@ page-game-rules {
 }
 
 @font-face {
-  font-family: ProximaNovaAltRegular;
-  src: url("../../assets/fonts/Mark Simonson - Proxima Nova Alt Regular.ttf") format("truetype");
+  font-family: ProximaNovaAltSemibold;
+  src: url("../../assets/fonts/Mark Simonson - Proxima Nova Alt Semibold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: ProximaNovaAltBold;
+  src: url("../../assets/fonts/Mark Simonson - Proxima Nova Alt Bold.ttf") format("truetype");
 }
 
 #spilletsRegler{
-  font-family: ProximaNovaAltRegular;
+  font-family: ProximaNovaAltBold;
   font-size: 11em;
   color: #f8d747;
   padding: 7% 0 0 0;
@@ -29,7 +34,7 @@ page-game-rules {
 }
 
 #startQuizTextContainer p{
-  font-family: ProximaNovaAltRegular;
+  font-family: ProximaNovaAltSemibold;
   font-size: 2.5em;
   margin: 0;
   text-align: center;
@@ -37,9 +42,11 @@ page-game-rules {
 }
 
 #commitButton{
+  width: 200px;
   position: absolute;
   bottom: 0px;
   right: 0px;
+  margin: 30px;
 }
 
 @media screen and (max-width: 1366px){
@@ -49,5 +56,28 @@ page-game-rules {
 
   #startQuizTextContainer p{
     font-size: 2em;
+  }
+
+  #commitButton{
+    width: 160px;
+  }
+}
+
+@media screen and (max-width: 415px){
+  #spilletsRegler{
+    font-size: 3em;
+    padding: 25% 0 0 0;
+  }
+
+  #startQuizTextContainer p{
+    font-size: 1.5em;
+  }
+
+  #startQuizBox{
+    height: 45%;
+  }
+
+  #commitButton{
+    width: 100px;
   }
 }

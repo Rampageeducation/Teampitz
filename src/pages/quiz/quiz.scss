@@ -7,16 +7,30 @@ page-quiz {
   src: url("../../assets/fonts/Mark Simonson - Proxima Nova Alt Regular.ttf") format("truetype");
 }
 
-#confirmButton{
+@font-face {
+  font-family: ProximaNovaAltSemibold;
+  src: url("../../assets/fonts/Mark Simonson - Proxima Nova Alt Semibold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: ProximaNovaAltBold;
+  src: url("../../assets/fonts/Mark Simonson - Proxima Nova Alt Bold.ttf") format("truetype");
+}
+
+#confirmButtonQuiz{
+  width: 200px;
   position: absolute;
   bottom: 0px;
   right: 0px;
+  margin: 30px;
 }
 
 #winScreen{
+  width: 200px;
   position: absolute;
   bottom: 0px;
   right: 0px;
+  margin: 30px;
 }
 
 #questionsContainer{
@@ -24,25 +38,30 @@ page-quiz {
   flex-direction: row;
   flex-wrap: wrap;
   width: 1120px;
-  margin:100px auto;
+  //margin:100px auto;
+  margin:60px 0 0 0;
+  position:absolute;
+  left:50%;
+  margin-left:-560px;
 }
 
 #questionBox{
   padding: 7% 0 0 0;
   text-align: center;
-  font-family: ProximaNovaAltRegular;
 }
 
 #questionOf{
   font-size: 6em;
   color: #f8d747;
   margin: 0;
+  font-family: ProximaNovaAltBold;
 }
 
 #actualQuestion{
   font-size: 4em;
   color: #000000;
   margin: 0;
+  font-family: ProximaNovaAltSemibold;
 }
 
 #test1, #test2, #test3, #test4{
@@ -112,10 +131,76 @@ page-quiz {
 
   #questionsContainer{
     width: 1020px;
-    margin:5% 0 0 16%;
+    //margin:5% 0 0 16%;
+    margin:60px 0 0 0;
+    margin-left:-340px;
   }
 
   #test1, #test2, #test3, #test4{
     font-size: 2em;
+  }
+
+  #confirmButtonQuiz{
+    width: 160px;
+  }
+
+  #winScreen{
+    width: 160px;
+  }
+}
+@media screen and (max-width: 415px){
+  #questionBox{
+    padding: 25% 0 0 0;
+  }
+
+  #questionOf{
+    font-size: 3em;
+  }
+
+  #actualQuestion{
+    font-size: 2em;
+  }
+
+  #image1, #image2, #image3, #image4{
+    width: 140px;
+    height: 90px;
+  }
+
+  #question1{
+    margin: 0 40px 20px 0;
+  }
+
+  #question2{
+    margin: 0 0 20px 0;
+  }
+
+  #question3{
+    margin: 0 40px 0 0;
+  }
+
+  #question1, #question2, #question3, #question4{
+    width: 140px;
+    height: 95px;
+  }
+
+  #questionsContainer{
+    width: 320px;
+    //margin:5% 0 0 16%;
+    margin:80px 0 0 0;
+    position:absolute;
+    left:50%;
+    margin-left:-160px;
+  }
+
+  #test1, #test2, #test3, #test4{
+    font-size: 1.5em;
+  }
+
+  #confirmButtonQuiz{
+    width: 100px;
+  }
+
+  #winScreen{
+    width: 100px;
   }
 }

@@ -159,7 +159,7 @@ function checkQuestion(){
 
 function showWinArrow(){
   if(question === numbersOfQuestions){
-    document.getElementById("confirmButton").style.display = "none"
+    document.getElementById("confirmButtonQuiz").style.display = "none"
     document.getElementById("winScreen").style.display = "block"
   }
 }

@@ -3,14 +3,14 @@ page-email-signup {
 }
 
 @font-face {
-  font-family: ProximaNovaAltRegular;
-  src: url("../../assets/fonts/Mark Simonson - Proxima Nova Alt Regular.ttf") format("truetype");
+  font-family: ProximaNovaAltSemibold;
+  src: url("../../assets/fonts/Mark Simonson - Proxima Nova Alt Semibold.ttf") format("truetype");
 }
 
 #signupBox{
   width: 70%;
   height: 40%;
-  font-family: ProximaNovaAltRegular;
+  font-family: ProximaNovaAltSemibold;
   background-color: rgba(255, 255, 255, 0.5);
   border: solid;
   margin: 20% auto 0 auto;
@@ -18,10 +18,12 @@ page-email-signup {
   font-size: 3em;
 }
 
-#commitButton{
+#commitButtonEmailSignUp{
+  width: 200px;
   position: absolute;
   bottom: 0px;
   right: 0px;
+  margin: 30px;
 }
 
 #signUpTextBox{
@@ -32,6 +34,24 @@ page-email-signup {
 
 @media screen and (max-width: 1366px){
   #signupBox{
-    font-size: 2em;
+    font-size: 1.5em;
+  }
+  #commitButtonEmailSignUp{
+    width: 160px;
+  }
+}
+
+@media screen and (max-width: 415px){
+  #commitButtonEmailSignUp{
+    width: 100px;
+  }
+
+  #signUpTextBox{
+    margin: 20% 0 0 0;
+  }
+
+  #signupBox{
+    height: 30%;
+    margin: 60% auto 0 auto;
   }
 }
