@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {EmailSignupPage} from "../email-signup/email-signup";
+import {EmailSignupPage} from "../email-signup-success/email-signup-success";
 
 /**
  * Generated class for the ResultsPage page.

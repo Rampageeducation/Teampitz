@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {HomePage} from "../home/home";
 
 /**
- * Generated class for the EmailSignupSuccessPage page.
+ * Generated class for the EmailSignupPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,18 +10,16 @@ import {HomePage} from "../home/home";
 
 @IonicPage()
 @Component({
-  selector: 'page-email-signup-success',
+  selector: 'page-email-signup',
   templateUrl: 'email-signup-success.html',
 })
-export class EmailSignupSuccessPage {
-
-  homePage = HomePage;
+export class EmailSignupPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad EmailSignupSuccessPage');
+    console.log('ionViewDidLoad EmailSignupPage');
   }
 
 }

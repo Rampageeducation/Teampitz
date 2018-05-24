@@ -1,14 +1,10 @@
 <ion-content padding style="
-    background-image: url('../../assets/imgs/quiz-new1.jpg');
-    background-image: url('assets/imgs/quiz-new1.jpg');
+    background-image: url('../../assets/imgs/quiz.jpg');
+    background-image: url('assets/imgs/quiz.jpg');
     background-size: cover;
     background-position: center center;
     background-color: #000000;
     ">
-  <!--
-  <p>Quiz</p>
-  <p [navPush]="resultsPage">Results</p>
-  -->
 
     <div id="questionBox">
       <h1 id="questionOf">Spørgsmål 1/5:</h1>   <!-- USE HIDE BLOCK?? -->
@@ -16,32 +12,29 @@
     </div>
 
   <div id="questionsContainer">
-
     <div id="question1">
-      <img src="assets/imgs/Answer.png" onclick="question1()" id="image1">
-      <p id="test1" onclick="question1()">question1</p>
+      <img src="assets/imgs/Answer.png" onclick="question1()" id="buttonImage1">
+      <p id="answerToQuestion1" onclick="question1()">question1</p>
     </div>
 
     <div id="question2">
-      <img src="assets/imgs/Answer.png" onclick="question2()" id="image2">
-      <p id="test2" onclick="question2()">question2</p>
+      <img src="assets/imgs/Answer.png" onclick="question2()" id="buttonImage2">
+      <p id="answerToQuestion2" onclick="question2()">question2</p>
     </div>
 
     <div id="question3">
-      <img src="assets/imgs/Answer.png" onclick="question3()" id="image3">
-      <p id="test3" onclick="question3()">question3</p>
+      <img src="assets/imgs/Answer.png" onclick="question3()" id="buttonImage3">
+      <p id="answerToQuestion3" onclick="question3()">question3</p>
     </div>
 
     <div id="question4">
-      <img src="assets/imgs/Answer.png" onclick="question4()" id="image4">
-      <p id="test4" onclick="question4()">question4</p>
+      <img src="assets/imgs/Answer.png" onclick="question4()" id="buttonImage4">
+      <p id="answerToQuestion4" onclick="question4()">question4</p>
     </div>
   </div>
 
-
   <div>
     <img src="assets/imgs/CommitButton.png" onclick="changeFunction()" id="confirmButtonQuiz">
-
     <img src="assets/imgs/CommitButton.png" onload="hideWinscreenArrow()" onclick="thisSessionStorage()" id="winScreen" [navPush]="resultsPage">
   </div>
 

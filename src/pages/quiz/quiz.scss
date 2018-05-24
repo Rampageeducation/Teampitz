@@ -1,7 +1,3 @@
-page-quiz {
-
-}
-
 @font-face {
   font-family: ProximaNovaAltRegular;
   src: url("../../assets/fonts/Mark Simonson - Proxima Nova Alt Regular.ttf") format("truetype");
@@ -20,32 +16,8 @@ page-quiz {
   src: url("../assets/fonts/Mark Simonson - Proxima Nova Alt Bold.ttf") format("truetype");
 }
 
-#confirmButtonQuiz{
-  width: 200px;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  margin: 30px;
-}
-
-#winScreen{
-  width: 200px;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  margin: 30px;
-}
-
-#questionsContainer{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 1120px;
-  //margin:100px auto;
-  margin:60px 0 0 0;
-  position:absolute;
-  left:50%;
-  margin-left:-560px;
+.scroll-content{
+  padding: 0!important;
 }
 
 #questionBox{
@@ -67,15 +39,15 @@ page-quiz {
   font-family: ProximaNovaAltSemibold;
 }
 
-#test1, #test2, #test3, #test4{
-  position: absolute;
-  font-family: ProximaNovaAltRegular;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  color: black;
-  font-size: 2.5em;
+#questionsContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1120px;
+  margin:60px 0 0 0;
+  position:absolute;
+  left:50%;
+  margin-left:-560px;
 }
 
 #question1, #question2, #question3, #question4{
@@ -99,20 +71,44 @@ page-quiz {
   margin: 0 120px 0 0;
 }
 
-.scroll-content{
-  padding: 0!important;
-}
-
-#image1, #image2, #image3, #image4{
+#buttonImage1, #buttonImage2, #buttonImage3, #buttonImage4{
   width: 1000px;
   height: 180px;
   opacity: 0.5;
 }
 
+#answerToQuestion1, #answerToQuestion2, #answerToQuestion3, #answerToQuestion4{
+  position: absolute;
+  font-family: ProximaNovaAltRegular;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: black;
+  font-size: 2.5em;
+}
+
+#confirmButtonQuiz{
+  width: 200px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin: 30px;
+}
+
+#winScreen{
+  width: 200px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin: 30px;
+}
+
 @media screen and (max-width: 1366px){
-  #image1, #image2, #image3, #image4{
-    width: 300px;
-    height: 120px;
+  #questionsContainer{
+    width: 1020px;
+    margin:60px 0 0 0;
+    margin-left:-340px;
   }
 
   #question1{
@@ -132,15 +128,13 @@ page-quiz {
     height: 125px;
   }
 
-  #questionsContainer{
-    width: 1020px;
-    //margin:5% 0 0 16%;
-    margin:60px 0 0 0;
-    margin-left:-340px;
+  #answerToQuestion1, #answerToQuestion2, #answerToQuestion3, #answerToQuestion4{
+    font-size: 2em;
   }
 
-  #test1, #test2, #test3, #test4{
-    font-size: 2em;
+  #buttonImage1, #buttonImage2, #buttonImage3, #buttonImage4{
+    width: 300px;
+    height: 120px;
   }
 
   #confirmButtonQuiz{
@@ -151,6 +145,7 @@ page-quiz {
     width: 160px;
   }
 }
+
 @media screen and (max-width: 415px){
   #questionBox{
     padding: 15% 0 0 0;
@@ -164,9 +159,12 @@ page-quiz {
     font-size: 2em;
   }
 
-  #image1, #image2, #image3, #image4{
-    width: 140px;
-    height: 90px;
+  #questionsContainer{
+    width: 320px;
+    margin:80px 0 0 0;
+    position:absolute;
+    left:50%;
+    margin-left:-160px;
   }
 
   #question1{
@@ -186,17 +184,13 @@ page-quiz {
     height: 95px;
   }
 
-  #questionsContainer{
-    width: 320px;
-    //margin:5% 0 0 16%;
-    margin:80px 0 0 0;
-    position:absolute;
-    left:50%;
-    margin-left:-160px;
+  #answerToQuestion1, #answerToQuestion2, #answerToQuestion3, #answerToQuestion4{
+    font-size: 1.5em;
   }
 
-  #test1, #test2, #test3, #test4{
-    font-size: 1.5em;
+  #buttonImage1, #buttonImage2, #buttonImage3, #buttonImage4{
+    width: 140px;
+    height: 90px;
   }
 
   #confirmButtonQuiz{

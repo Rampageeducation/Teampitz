@@ -1,13 +1,7 @@
-page-home {
-}
-
 @font-face {
   font-family: ProximaNovaAltSemibold;
   src: url("../../assets/fonts/Mark Simonson - Proxima Nova Alt Semibold.ttf") format("truetype");
   src: url("../assets/fonts/Mark Simonson - Proxima Nova Alt Semibold.ttf") format("truetype");
-}
-
-ion-content{
 }
 
 #tirpitz-logo{
@@ -16,7 +10,6 @@ ion-content{
 
 #startGameBox{
   width: 70%;
-  //height: 40%;
   height: fit-content;
   font-family: ProximaNovaAltSemibold;
   background-color: rgba(255, 255, 255, 0.5);
@@ -31,24 +24,22 @@ ion-content{
   color: #000000;
 }
 
-#blackArrow{
-  width: 200px;
-}
-
 #startQuizContainer{
   text-align: center;
   margin: 7% 0 7% 0;
 }
 
-@media screen and (max-width: 1366px){
+#blackArrow{
+  width: 200px;
+}
 
+@media screen and (max-width: 1366px){
   #blackArrow{
     width: 150px;
   }
 }
 
 @media screen and (max-width: 415px){
-
   #tirpitz-logo{
     padding: 15% 10% 5% 10%;
   }
@@ -62,11 +53,11 @@ ion-content{
     font-size: 4em;
   }
 
-  #blackArrow{
-    width: 90px;
-  }
-
   #startQuizContainer{
     margin: 7% 0 0 0;
+  }
+
+  #blackArrow{
+    width: 90px;
   }
 }

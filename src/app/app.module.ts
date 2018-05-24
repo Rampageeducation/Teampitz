@@ -9,8 +9,7 @@ import { HomePage } from '../pages/home/home';
 import {GameRulesPage} from "../pages/game-rules/game-rules";
 import {QuizPage} from "../pages/quiz/quiz";
 import {ResultsPage} from "../pages/results/results";
-import {EmailSignupPage} from "../pages/email-signup/email-signup";
-import {EmailSignupSuccessPage} from "../pages/email-signup-success/email-signup-success";
+import {EmailSignupPage} from "../pages/email-signup-success/email-signup-success";
 
 @NgModule({
   declarations: [
@@ -19,8 +18,7 @@ import {EmailSignupSuccessPage} from "../pages/email-signup-success/email-signup
     GameRulesPage,
     QuizPage,
     ResultsPage,
-    EmailSignupPage,
-    EmailSignupSuccessPage
+    EmailSignupPage
   ],
   imports: [
     BrowserModule,
@@ -33,8 +31,7 @@ import {EmailSignupSuccessPage} from "../pages/email-signup-success/email-signup
     GameRulesPage,
     QuizPage,
     ResultsPage,
-    EmailSignupPage,
-    EmailSignupSuccessPage
+    EmailSignupPage
   ],
   providers: [
     StatusBar,
