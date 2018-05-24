@@ -22,29 +22,7 @@ function hideWinscreenArrow() {
     document.getElementById("winScreen").style.display = "none"
 }
 
-function hideElements(){
-    document.getElementById("buttonImage1").style.display = "none";
-    document.getElementById("buttonImage2").style.display = "none";
-    document.getElementById("buttonImage3").style.display = "none";
-    document.getElementById("buttonImage4").style.display = "none";
-    document.getElementById("answerToQuestion1").style.display = "none";
-}
-
-function thisSessionStorage() {
-    sessionStorage.setItem("SessionName",rightAnswersCounter);
-}
-
-function windowCheck() {
-    if (window.location.href.match('quiz.html')){
-        setQuestions();
-    }
-    else if (window.location.href.match('winScreen.html')){
-        winMessage();
-    }
-}
-
 function winMessage() {
-    console.log("Will it print?");
     document.getElementById("results").innerHTML = "Du havde " + sessionStorage.getItem("SessionName")+ "/" + numbersOfQuestions + " rigtige!"
 }
 
@@ -62,7 +40,6 @@ function question1() {
         clickedImage = 1;
         if (answer1[0].answer === true) {
             rightAnswersCounter++;
-            console.log("answer 1 is true");
             changeRightImages();
         }
         changeWrongImages();
@@ -76,7 +53,6 @@ function question2() {
         clickedImage = 2;
         if (answer1[1].answer === true) {
             rightAnswersCounter++;
-            console.log("answer 2 is true");
             changeRightImages();
         }
         changeWrongImages();
@@ -90,7 +66,6 @@ function question3() {
         clickedImage = 3;
         if (answer1[2].answer === true) {
             rightAnswersCounter++;
-            console.log("answer 3 is true");
             changeRightImages();
         }
         changeWrongImages();
@@ -104,7 +79,6 @@ function question4() {
         clickedImage = 4;
         if (answer1[3].answer === true) {
             rightAnswersCounter++;
-            console.log("answer 4 is true");
             changeRightImages();
         }
         changeWrongImages();
@@ -116,31 +90,20 @@ function question4() {
 function checkQuestion(){
     if (question === 1){
         answerIs2();
-        console.log("answerIs2() active")
         question++;
     }
     else if (question === 2){
         answerIs3();
-        console.log("answerIs3() active")
         question++;
     }
     else if (question === 3){
         answerIs4();
-        console.log("answerIs4() active")
         question++;
     }
     else if (question === 4){
         answerIs5();
-        console.log("answerIs5() active")
         question++;
     }
-}
-
-function showWinArrow(){
-  if(question === numbersOfQuestions){
-    document.getElementById("confirmButtonQuiz").style.display = "none"
-    document.getElementById("winScreen").style.display = "block"
-  }
 }
 
 function answerIs1() {
@@ -191,6 +154,13 @@ function answerIs5() {
       {answer: false, question: "question20"},
       {actualQuestion: "Hvad er 5 + 5?"}
     ];
+}
+
+function showWinArrow(){
+  if(question === numbersOfQuestions){
+    document.getElementById("confirmButtonQuiz").style.display = "none"
+    document.getElementById("winScreen").style.display = "block"
+  }
 }
 
 function changeImages() {
@@ -265,6 +235,9 @@ function changeFunction() {
     }
 }
 
+function thisSessionStorage() {
+  sessionStorage.setItem("SessionName",rightAnswersCounter);
+}
 
 function reloadQuiz() {
   location.reload();
