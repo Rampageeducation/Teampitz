@@ -51,3 +51,9 @@
     width: 100px;
   }
 }
+
+@media screen and (max-width: 360px){
+  #signupBox{
+    font-size: 1em;
+  }
+}

@@ -205,3 +205,13 @@
     width: 100px;
   }
 }
+
+@media screen and (max-width: 360px){
+  #questionOf{
+    font-size: 2.5em;
+  }
+
+  #actualQuestion{
+    font-size: 1em;
+  }
+}

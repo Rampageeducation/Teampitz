@@ -11,7 +11,7 @@
 }
 
 #thanksMessageBox{
-  width: 1000px;
+  width: 100%;
   margin: 5% auto 0 auto;
   font-family: ProximaNovaAltBold;
 }
@@ -102,8 +102,7 @@
   }
 
   #thanksMessageBox{
-    width: 414px;
-    margin: 15% 0 0 0;
+    margin: 15% auto 0 auto;
   }
 
   #results{
@@ -131,8 +130,12 @@
   }
 }
 
-@media screen and (max-width: 376px){
-  #thanksMessageBox{
-    width: 375px;
+@media screen and (max-width: 360px){
+  #results{
+    font-size: 1.5em;
+  }
+
+  #textBox2, #textBox1{
+    font-size: 1em;
   }
 }

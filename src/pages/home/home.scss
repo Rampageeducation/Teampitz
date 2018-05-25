@@ -61,3 +61,9 @@
     width: 90px;
   }
 }
+
+@media screen and (max-width: 360px){
+  #startGameBox p{
+    font-size: 3em;
+  }
+}
