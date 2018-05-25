@@ -2,7 +2,7 @@ let rightAnswersCounter = 0;
 
 let question = 1;
 
-let numbersOfQuestions = 5; //Manuel set this value
+let numbersOfQuestions = 10; //Manuel set this value
 
 let timeoutActive = false;
 
@@ -11,11 +11,11 @@ let clickedImage;
 let answered = false;
 
 let answer1 =[
-    {answer: true, question: "question1"},
-    {answer: false, question: "question2"},
-    {answer: false, question: "question3"},
-    {answer: false, question: "question4"},
-    {actualQuestion: "Hvad er 1 + 1?"}
+    {answer: false, question: "En pung"},
+    {answer: true, question: "En sten fra en bunker"},
+    {answer: false, question: "En bog"},
+    {answer: false, question: "En lommeregner"},
+    {actualQuestion: "Hvilken ting finder du i genstands kasse 1? (mærke)"}
 ];
 
 function hideWinscreenArrow() {
@@ -104,56 +104,126 @@ function checkQuestion(){
         answerIs5();
         question++;
     }
+    else if (question === 5){
+      answerIs6();
+      question++;
+    }
+    else if (question === 6){
+      answerIs7();
+      question++;
+    }
+    else if (question === 7){
+      answerIs8();
+      question++;
+    }
+    else if (question === 8){
+      answerIs9();
+      question++;
+    }
+    else if (question === 9){
+      answerIs10();
+      question++;
+    }
 }
 
 function answerIs1() {
   answer1 =[
-    {answer: true, question: "question1"},
-    {answer: false, question: "question2"},
-    {answer: false, question: "question3"},
-    {answer: false, question: "question4"},
-    {actualQuestion: "Hvad er 1 + 1?"}
+    {answer: false, question: "En pung"},
+    {answer: true, question: "En sten fra en bunker"},
+    {answer: false, question: "En bog"},
+    {answer: false, question: "En lommeregner"},
+    {actualQuestion: "Hvilken ting finder du i genstands kasse 1? (mærke)"}
   ];
 }
 
 function answerIs2() {
     answer1 =[
-      {answer: false, question: "question5"},
-      {answer: true, question: "question6"},
-      {answer: false, question: "question7"},
-      {answer: false, question: "question8"},
-      {actualQuestion: "Hvad er 2 + 2?"}
+      {answer: false, question: "Grus"},
+      {answer: false, question: "Sten"},
+      {answer: false, question: "Sand"},
+      {answer: true, question: "Rav"},
+      {actualQuestion: "Hvilken ting finder du i genstands kasse 2? (mærke)"}
     ];
 }
 
 function answerIs3() {
     answer1 =[
-      {answer: false, question: "question9"},
-      {answer: false, question: "question10"},
-      {answer: true, question: "question11"},
-      {answer: false, question: "question12"},
-      {actualQuestion: "Hvad er 3 + 3?"}
+      {answer: false, question: "De farede vild"},
+      {answer: false, question: "De gjorde sig nye opdagelser"},
+      {answer: true, question: "De døde"},
+      {answer: false, question: "De blev berømte da de kom hjem"},
+      {actualQuestion: "Hvad skete der for de sømænd der sejlede ind i Horns Rev? (mærke) (Hint: Mærk godt efter i genstands kasse 4)"}
     ];
 }
 
 function answerIs4() {
     answer1 =[
-      {answer: false, question: "question13"},
-      {answer: false, question: "question14"},
-      {answer: false, question: "question15"},
-      {answer: true, question: "question16"},
-      {actualQuestion: "Hvad er 4 + 4?"}
+      {answer: false, question: "De blev udstødt af familien"},
+      {answer: true, question: "De fik klippet håret af"},
+      {answer: false, question: "De blev tvunget til at blive vegetar"},
+      {answer: false, question: "De fik en bøde"},
+      {actualQuestion: "Hvordan blev kvinderne straffet hvis de var sammen med en tysker under anden verdenskrig? (mærke) (Hint: Mærk godt efter i genstandskasse 3)"}
     ];
 }
 
 function answerIs5() {
     answer1 =[
-      {answer: false, question: "question17"},
-      {answer: true, question: "question18"},
-      {answer: false, question: "question19"},
-      {answer: false, question: "question20"},
-      {actualQuestion: "Hvad er 5 + 5?"}
+      {answer: false, question: "Strandbykirkevej 61, Esbjerg"},
+      {answer: false, question: "Østre Gjesingvej 89, Esbjerg"},
+      {answer: true, question: "Tirpitzvej 1, 6857 Blåvand"},
+      {answer: false, question: "Kringsvej 1, 6857 Blåvand"},
+      {actualQuestion: "Hvor ligger Tirpitz museum? (høre)"}
     ];
+}
+
+function answerIs6() {
+  answer1 =[
+    {answer: true, question: "4"},
+    {answer: false, question: "2"},
+    {answer: false, question: "6"},
+    {answer: false, question: "5"},
+    {actualQuestion: "Hvor mange udstillinger er der på Tirpitz museum? (høre)"}
+  ];
+}
+
+function answerIs7() {
+  answer1 =[
+    {answer: false, question: "Tirpitz bunkerne, En hær af metal, Rav – Havets skat og Den hemmelige kyst"},
+    {answer: true, question: "Den skjulte kyst, Tirpitz bunkeren, En hær af beton og Rav – Havets guld"},
+    {answer: false, question: "Det hemmelige hav, Beton bunkeren, En hær af rav og Rav – Havets skatterige"},
+    {answer: false, question: "En hær af rav, Det værdifulde hav, Den farverige kyst og Beton – Asfaltens guld"},
+    {actualQuestion: "Hvad hedder Tirpitz udstillingerne? (høre)"}
+  ];
+}
+
+function answerIs8() {
+  answer1 =[
+    {answer: false, question: "180 kr for voksne - 100 kr for børn under 18 år - 300 kr for årskort"},
+    {answer: false, question: "200 kr for voksne – 150 kr for børn under 18 år – 250 kr for årskort"},
+    {answer: false, question: "400 kr for voksne – 300 kr for børn under 18 år – 500 kr for årskort"},
+    {answer: true, question: "125 kr for voksne - Gratis for børn under 18 år - 200 kr for årskort"},
+    {actualQuestion: "Hvad er priserne for biletter til Tirpitz museum? (høre)"}
+  ];
+}
+
+function answerIs9() {
+  answer1 =[
+    {answer: false, question: "10-16 alle dage"},
+    {answer: false, question: "5-15 alle dage"},
+    {answer: true, question: "10-17 alle dage"},
+    {answer: false, question: "8-18 alle dage"},
+    {actualQuestion: "Hvad er åbningstiderne til Tirpitz? (høre)"}
+  ];
+}
+
+function answerIs10() {
+  answer1 =[
+    {answer: true, question: "Vardemuseerne"},
+    {answer: false, question: "Blåvandmuseerne"},
+    {answer: false, question: "Esbjergmuseerne"},
+    {answer: false, question: "Jylland museerne"},
+    {actualQuestion: "Hvilken organisation hører Tirpitz under? (høre)"}
+  ];
 }
 
 function showWinArrow(){
